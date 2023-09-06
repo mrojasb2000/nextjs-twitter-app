@@ -111,8 +111,6 @@
     "wrap-iife": "error",
     "yoda": "error"
   },
-  // Strict Mode
-  "strict": "error",
   // Variables
   "init-declarations": "off",
   "no-catch-shadow": "error",
