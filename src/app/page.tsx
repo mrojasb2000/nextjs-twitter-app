@@ -7,7 +7,7 @@ export default async function Home() {
   const supabase = createServerComponentClient({
     cookies,
   })
-  const { data: posts } = await supabase.from('posts').select('*')
+  const { data: posts } = await supabase.from('posts').select('*, users(*)')
   const {
     data: { session },
   } = await supabase.auth.getSession()
